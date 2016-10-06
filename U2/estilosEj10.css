@@ -1,0 +1,16 @@
+body{
+  background-image: url(http://www.fandroides.com/wp-content/uploads/2014/05/wall4.jpg);
+}
+h1{
+  color: 	#FFFFFF;
+  background-image: url(https://1.bp.blogspot.com/_sD9yQTE5QZQ/SGvRFJbT6QI/AAAAAAAADg4/5Ot2-aTA4_w/s400/blue1961.jpg);
+}
+a {
+  margin: 1em 0;
+  float: left;
+  clear: left;
+ }
+ .pdf {
+color: #E37529;
+padding: 0 0 0 18px;
+background: #FFF url(http://www.hikashop.com/media/com_hikashop/upload/pdf.png) no-repeat left center;
