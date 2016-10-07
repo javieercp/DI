@@ -1,0 +1,45 @@
+table{
+  text-align: center;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+table, td, tr {
+    border: 2px solid black;
+}
+caption{
+  text-align: left;
+  caption-side: bottom;
+  font-style: italic;
+}
+
+.imagen1{
+  background-image: url('http://vignette2.wikia.nocookie.net/howtoprogram/images/a/a9/CSS3.png/revision/latest?cb=20130422012035');
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  text-align: right;
+  caption-side: bottom;
+  background-position: 5px 5px;
+}
+.imagen2{
+  background-image: url('http://vignette1.wikia.nocookie.net/eswikia/images/f/f0/HTML5-logo.png/revision/latest?cb=20120709105013');
+  background-repeat: no-repeat;
+  text-align: right;
+  background-size: 50px 50px;
+  background-position: 5px;
+  caption-side: bottom;
+}
+tr:nth-child(even){
+  background-color: rgb(229, 229, 229);
+}
+.imagen1,.imagen2{
+  height: 60px;;
+}
+.imagen1:active{
+  background-color:  #FFFF66;
+}
+.imagen2:active{
+  background-color:  #FFFF66;
+}
+.unidad1,.unidad2{
+  width: 120px;
+}
