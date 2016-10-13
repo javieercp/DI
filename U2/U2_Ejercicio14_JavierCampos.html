@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio 14</title>
+  </head>
+  <link rel="stylesheet" href="stylesEj14.css">
+  <body>
+    <form>
+      <fieldset>
+        <legend>Inscripción</legend>
+        <fieldset>
+          <legend>Información personal</legend>
+        <div>
+          <label for="name">Nombre*:</label><input type="text" id="name" placeholder="Introduce el nombre" required autofocus>
+        </div>
+        <div>
+          <label for="surname">Apellidos*:</label><input type="text" id="surname" placeholder="Introduce los apellidos" required>
+        </div>
+        <div>
+          <label for="email">Email*:</label><input type="email" id="email" placeholder="Introduce el email" required>
+        </div>
+        <div>
+          <label>Sexo</label>
+          <label for="male">Hombre:<input type="radio" name="genero" id="male" value="male"></label>
+          <label for="female">Mujer:<input type="radio" name="genero" id="female" value="female"></label>
+        </div>
+        <br>
+        <div>
+          <label for="date">Fecha de nacimiento:*</label><input type="date" id="date" placeholder="Introduzca la fecha" required>
+        </div>
+        <div>
+          Provincia:
+          <select class="provincia">
+            <option value="option">Escoge una provincia</option>
+            <option value="option">Valencia</option>
+            <option value="option">Castellon</option>
+            <option value="option">Alicante</option>
+          </select>
+        </div>
+        <div>
+          <label for="poblacion">Población:</label><input type="text" id="poblacion" placeholder="Introduzca población">
+        </div>
+        <div>
+          <label for="nphone">Telefono:</label><input type="text" id="nphone" placeholder="Introduzca telefono">
+        </div>
+        <div>
+          <p>
+            Motivo inscripción:
+          </p>
+          <textarea rows="2" cols="100" id="inscripcion" scrolling="true"></textarea>
+        </div>
+        <div>
+          Escoge el color del avatar: <input type="color" name="name" value="">
+        </div>
+          </fieldset>
+          <fieldset>
+            <legend>Creación de usuario</legend>
+          <div>
+            <label for="user">Nombre de usuario:*</label><input type="text" id="user" placeholder="Introduzca el nombre de usuario" required>
+          </div>
+          <div>
+            <label for="pass">Contraseña:*</label><input type="password" id="pass" placeholder="Introduzca la contraseña" maxlength="8" required size="10">
+          </div>
+          <div>
+            <label for="repass">Repite la Contraseña:*</label><input type="password" id="repass" placeholder="Repite la contraseña" maxlength="8" required size="10">
+          </div>
+        </fieldset>
+        <div>
+          <input type="checkbox" name="name" value="forum">Deseo recibir copias de los mensajes del foro en mi correo
+        </div>
+        <div>
+          <input type="checkbox" name="name" value="email">Deseo recibir notificaciones de próximos eventos en mi correo electronico
+        </div>
+        <div>
+          <input type="submit" name="name" value="Confirmar registro" method="post">
+        </div>
+        <div>
+          <p class="note">
+            Nota: Los campos marcados con "*" son obligatorios
+          </p>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
