@@ -3,9 +3,7 @@
 	margin: 0px;
 	padding: 0px;
  }
- h1{
-	 text-align: center;
- }
+
 
 /* Para que los nuevos elementos sean tratamos como block */
 header, section, footer, aside, nav, article, figure, figcaption,hgroup {
