@@ -3,6 +3,9 @@
 	margin: 0px;
 	padding: 0px;
  }
+ h1{
+	 text-align: center;
+ }
 
 /* Para que los nuevos elementos sean tratamos como block */
 header, section, footer, aside, nav, article, figure, figcaption,hgroup {
@@ -148,11 +151,23 @@ li ul {
 li:hover ul{
   display:block;
   }
-ul#menu-horizontal li {
-	display: block;
+#menu-horizontal1, #menu-horizontal2{
+  display: none
+}
+#uno:hover, #menu-horizontal1:hover{
+  color: blue;
+}
+#uno:hover #menu-horizontal1{
+  display: block;
   position: absolute;
   width: 120px;
   left: 5px;
   background-color: lightgray;
-  border: 1px solid gray;
+}
+#menu-horizontal1:hover #menu-horizontal2{
+  display: block;
+  position: absolute;
+  width: 120px;
+  left: 5px;
+  background-color: lightgray;
 }
