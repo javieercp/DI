@@ -1,0 +1,22 @@
+body{
+  font-size: 0.9em;
+  color: 	#000099;
+  font-family: Verdana;
+  line-height: 1.4em;
+}
+h1{
+  text-align: center;
+  padding: 10px;
+  text-transform: capitalize;
+  border: 1px solid;
+  border-radius: 5px;
+}
+p{
+  text-indent: 1cm;
+}
+a{
+  text-decoration: none;
+}
+a:visited{
+  color: #006600;
+}
