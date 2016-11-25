@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Practica 3</title>
+    <link rel="stylesheet" href="U3Practica.css">
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" class="logo">
+      <h1>Diseño grafico para Web Responsive</h1>
+    </header>
+    <section>
+      <picture>
+        <source media="(min-width: 1024px)" srcset="mobile-phone_W1024_C90.jpg" class="principal">
+        <source media="(min-width: 640px)" srcset="tablet.jpg" class="principal">
+        <source media="(min-width: 320px)" srcset="movil.jpg" class="principal">
+        <!-- img para navegadores que no soportan el picture element -->
+        <img src="mobile-phone-1419275.jpg" alt="su navegador no es compatible" class="principal">
+      </picture>
+
+    </section>
+    <section>
+      <article class="left">
+        <img src="foto.jpg" class="photo">
+        <p>Foto de empresa trabajando</p>
+      </article>
+      <article class="right">
+        <img src="telefonoAnimado.gif" class="animacion" align="middle">
+        <p class="textoGif">Contacte con nosotros si tiene alguna pregunta o problema</p>
+      </article>
+    </section>
+  </body>
+</html>
