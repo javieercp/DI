@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Practica 3</title>
+    <link rel="stylesheet" href="U3Practica3.css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css?x25758" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="favicons/manifest.json">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" class="logo">
+      <h1>Diseño grafico para Web Responsive</h1>
+    </header>
+    <section>
+      <picture>
+        <source media="(min-width: 1024px)" srcset="mobile-phone_W1024_C90.jpg" class="principal">
+        <source media="(min-width: 640px)" srcset="tablet.jpg" class="principal">
+        <source media="(min-width: 320px)" srcset="movil.jpg" class="principal">
+        <!-- img para navegadores que no soportan el picture element -->
+        <img src="mobile-phone-1419275.jpg" alt="su navegador no es compatible" class="principal">
+      </picture>
+
+    </section>
+    <section>
+      <article class="left">
+        <img src="foto.jpg" class="photo">
+        <div class="sprite">
+
+        </div>
+        <p>Foto de empresa trabajando</p>
+      </article>
+      <article class="right">
+        <a href="tel:+1-303-499-7111"><img src="telefono.png" class="animacion" align="middle"></a>
+        </img>
+        <p class="textoGif">Contacte con nosotros si tiene alguna pregunta o problema</p>
+
+          <ul>
+            <li><a href="http://facebook.com/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="http://linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="http://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="http://plus.google.com/"><i class="fa fa-google-plus"></i> </a></li>
+          </ul>
+
+      </article>
+    </section>
+  </body>
+</html>
