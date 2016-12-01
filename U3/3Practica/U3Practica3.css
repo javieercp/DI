@@ -1,0 +1,100 @@
+/**{
+  padding: 0px;
+  margin: 0px;
+}*/
+
+.logo, .animacion{
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+.sprite {
+	background: url('iconninja-sprites.png') no-repeat -1px -19px;
+	width: 150px;
+	height: 150px;
+  float: left;
+}
+.principal{
+  width: 100%;
+}
+.left{
+  float: left;
+  width: 40%;
+}
+.right{
+  float: right;
+  width: 50%;
+}
+.photo{
+  width: 150px;
+  height: 150px;
+  padding: 5px;
+  margin-left: 150px;
+}
+.animacion{
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  margin-left: 200px;
+}
+/*ul {
+	overflow: auto;
+}
+
+ul li {
+	list-style-type: none;
+	float: left;
+}
+
+ul li a i {
+	background: #205D7A;
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	font-size: 25px;
+	text-align: center;
+	margin-right: 10px;
+	padding-top: 15%;
+}*/
+.textoGif{
+  /*position: relative;*/
+  text-align: center;
+  margin-top: 170px;
+
+}
+ul {
+	overflow: auto;
+}
+
+ul li {
+	list-style-type: none;
+	float: left;
+}
+
+ul li a i {
+	background: #205D7A;
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	font-size: 25px;
+	text-align: center;
+	margin-right: 10px;
+	padding-top: 15%;
+}
+.fa-facebook {
+	background:#3b5998
+}
+.fa-linkedin {
+	background:#007bb6
+}
+.fa-twitter {
+	background:#00aced
+}
+.fa-google-plus {
+	background:#dd4b39
+}
+ul li a i:hover {
+    opacity: .7;
+}
