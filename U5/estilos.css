@@ -32,6 +32,9 @@ h4 {
 	margin-top: 10px;
 	font-size: 1.1em;
 }
+td {
+	text-align: center;
+}
 
 ul {
 	margin-left: 10px;
@@ -50,11 +53,11 @@ p span{
 }
 
 a {
-	color: #0045da; text-decoration: none; border-bottom: 1px dotted #0045da;
+	color: ##0045da; text-decoration: none; border-bottom: 1px dotted ##0045da;
 }
 
 a:visited {
-	color: #0045da; border-bottom: 1px solid #0045da;
+	color: ##0045da; border-bottom: 1px solid ##0045da;
 }
 
 a:focus, a:hover {
@@ -109,6 +112,13 @@ a:focus, a:hover {
 
 #lateral {
 	position: absolute; right: 10px; top: 100px; width: 200px;
+}
+#imgTorti{
+	width: 290px;
+}
+#derecha {
+
+	position: absolute; right: 400px; top: 280px; width: 400px;
 }
 
 #lateral h2, #lateral ul {

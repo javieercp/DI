@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <title>Abuela</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script type="text/javascript">
+      function visualiza(elId) {
+        //selecciona los div dentro de contenido
+        var losDiv = document.getElementById("contenido").getElementsByTagName("div");
+        //oculta los div seleccionados
+        for(var i = 0; i < losDiv.length; i++){
+          losDiv[i].style.display = "none";
+        }
+        //muestra el div indicado
+        document.getElementById(elId).style.display = "block";
+        // cancela el evento normal del enlace (equivale a e.preventDefault());
+        return false;
+      }
+    </script>
+  </head>
+  <body>
+    <div id="titulo">
+      <div id="texto">
+        <h1>Recetas de la abuela</h1>
+        <p>Como en casa en ningún sitio!</p>
+      </div>
+      <div id="logo">
+      <a href="https://www.google.es" target="_blank" ><img src="logo.png" alt="abuelita" /></a>
+      </div>
+    </div>
+
+    <div id="navegacion">
+      <ul>
+	       <li><a href="#presentacion" onclick="visualiza('presentacion');">Presentación</a></li>
+	       <li><a href="#primeros" onclick="visualiza('primeros');">Primer plato</a></li>
+	       <li><a href="#segundos" onclick="visualiza('segundos');">Segundo plato</a></li>
+	       <li><a href="#postres" onclick="visualiza('postres');">Postre</a></li>
+       </ul>
+     </div>
+<!-- Inicio de contenido -->
+<div id="contenido">
+
+<div id="presentacion">
+  <h2>Bienvenido a la web de recetas.</h2>
+  <p>
+    Caracteristicas de accesibilidad de esta web
+
+  </p>
+  <p><ul>
+<li><strong>Cumplimiento con los estándares XHTML y CSS: </strong> una codificación correcta es capaz de ser interpretada correctamente por los dispositivos de navegación de los usuarios y, particularmente, por los dispositivos especiales que utilizan personas con limitaciones funcionales.</li>
+<li><strong>Estructura semántica correcta. </strong> Un esquema de presentación organizado que permite acceder mejor al contenido con especial atención a cabeceras, listas y etiquetas, elementos clave para la navegación mediante lectores de pantalla.</li>
+<li><strong>Eliminar códigos desaconsejados por la W3C:</strong> permitiendo a las herramientas de apoyo  que interpreten y expongan correctamente el contenido y su contexto a los usuarios que las utilizan.</li>
+<li><strong>Utilizar en las hojas de estilo medidas proporcionales:</strong> beneficiando al usuario, que de este modo puede controlar la manera en que se muestra el contenido en la pantalla.</li>
+<li><strong>Separación del contenido, presentación y la programación Javascript:</strong> de forma que los usuarios que no posean esta tecnología puedan entender y tener acceso a toda la información de la página.</li>
+<li><strong>Añadir atributos title a los enlaces:</strong> de modo que los nombres de los enlaces tengan sentido fuera de su contexto.</li>
+<li><strong>Ofrecer siempre una alternativa al contenido dinámico (Javascript, Ajax, Videos, etc.): </strong> ayudando a una correcta navegación y comprensión del contenido a los usuarios que no tiene acceso a esta tecnología.</li>
+<li><strong>Procurar que el contraste entre el contenido y el fondo sea al menos el mínimo requerido:</strong> garantizando que puedan ser distinguidos por todos usuarios.</li>
+<li><strong>Desarrollo accesible de formularios:</strong> de forma que no se limite la capacidad para realizar consultas, hacer solicitudes, llevar a cabo búsquedas de contenidos y, en general, la función de interactividad que se presupone en la web.</li>
+
+<li><strong>Perceptible:</strong> Se ha procurado que toda la información y contenidos transmitidos en la web de Iberia puedan ser percibidos por todos los usuarios.</li>
+<li><strong>Operable:</strong> Los desarrollos en la web de Iberia se han centrado en el usuario, independientemente de sus capacidades, para que toda interfaz pueda ser utilizada y adaptada.</li>
+<li><strong>Comprensible:</strong> La implementación de los contenidos y el manejo de la interfaz de las páginas cumplen con la idea de ser comprensibles para todos los usuarios.</li>
+<li><strong>Robusto:</strong> Se ha desarrollado, evaluado y testado que todas las operativas que se ofrecen en el sitio web de Iberia son soportadas por una gran variedad de aplicaciones de usuario.</li>
+<li><strong>Conformidad:</strong> El sitio web de Iberia respeta y cumple con el nivel de adecuación AA/WCAG 2.0, en todas las páginas de manera completa, en sus procesos, sin interferencias y siendo soportado y accedido su contenido por la mayoría de las ayudas técnicas más utilizadas por los usuarios.</li>
+</ul></p>
+
+
+</div>
+
+<div id="lateral">
+  <h3>Síguenos</h3>
+  <ul>
+    <li><a href="#">Twitter</a></li>
+    <li><a href="#">Youtube</a></li>
+    <li><a href="#">Facebook</a></li>
+  </ul>
+  <h3>Webs amigas</h3>
+  <ul>
+    <li><a href="#">El cocinillas</a></li>
+    <li><a href="#">Cocina para dummys</a></li>
+    <li><a href="#">Recetas en 4 min</a></li>
+  </ul>
+</div>
+
+<div id="pie">
+<ul>
+  <a href="accesibilidad.html">Accesibilidad</a>
+</ul>
+</div>
+</body>
+</html>

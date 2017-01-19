@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <title>Abuela</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script type="text/javascript">
+      function visualiza(elId) {
+        //selecciona los div dentro de contenido
+        var losDiv = document.getElementById("contenido").getElementsByTagName("div");
+        //oculta los div seleccionados
+        for(var i = 0; i < losDiv.length; i++){
+          losDiv[i].style.display = "none";
+        }
+        //muestra el div indicado
+        document.getElementById(elId).style.display = "block";
+        // cancela el evento normal del enlace (equivale a e.preventDefault());
+        return false;
+      }
+    </script>
+  </head>
+  <body>
+    <div id="titulo">
+      <div id="texto">
+        <h1>Recetas de la abuela</h1>
+        <p>Como en casa en ningún sitio!</p>
+      </div>
+      <div id="logo">
+      <a href="https://www.google.es" target="_blank" ><img src="logo.png" alt="abuelita" /></a>
+      </div>
+    </div>
+
+    <div id="navegacion">
+      <ul>
+	       <li><a href="#presentacion" onclick="visualiza('presentacion');">Presentación</a></li>
+	       <li><a href="#primeros" onclick="visualiza('primeros');">Primer plato</a></li>
+	       <li><a href="#segundos" onclick="visualiza('segundos');">Segundo plato</a></li>
+	       <li><a href="#postres" onclick="visualiza('postres');">Postre</a></li>
+       </ul>
+     </div>
+<!-- Inicio de contenido -->
+
+<div id="contenido">
+
+<div id="presentacion">
+  <h2>Bienvenido a la web de recetas.</h2>
+  <p>
+    Tortilla de patatas. Como decía mi abuela:
+    <span lang="ca">Aprofita nen! Com es menja a casa no es menja enlloc!</span>
+  </p>
+  <p lang="fr">Bon Appetit!</p>
+
+  <table border="2px">
+  <tr>
+    <th scope="col">Ingredientes</th>
+    <th scope="col">Cantidad</th>
+
+  </tr>
+
+  <tr>
+    <td>Huevos</td>
+    <td>6</td>
+
+  </tr>
+
+  <tr>
+    <td>patatas (600gr)</td>
+    <td>3</td>
+
+  </tr>
+
+  <tr>
+    <td>Cebolla Pequeña</td>
+    <td>1</td>
+
+  </tr>
+  <tr>
+    <td>Pimiento Verde</td>
+    <td>1</td>
+
+  </tr>
+  <tr>
+    <td>Vasos de aceite</td>
+    <td>2</td>
+
+  </tr>
+  <tr>
+    <td colspan="2">Sal</td>
+
+
+  </tr>
+</table>
+<div id="derecha">
+
+  <img src="http://www.que.es/archivos/201504/tortilla_patatas-672xXx80.jpg" id="imgTorti" alt="Tortilla">
+
+</div>
+<p><strong>Elaboración de la receta de Tortilla de patatas</strong><strong>:</strong></p><p>Pela y pica la cebolla en dados medianos. Limpia el <a href="http://www.hogarmania.com/cocina/recetas/ensaladas-verduras/201308/recetas-pimientos-verdes-21225.html" title="Recetas con pimiento verde" target="_blank">pimiento verde</a>, retírale el tallo y las pepitas y córtalo en dados. Si las patatas estuvieran sucias, pásalas por agua. Pélalas, córtalas por la mitad a lo largo y después corta cada trozo en medias lunas finas de 1/2 centímetro. Introduce todo en la sartén, sazona a tu gusto y fríe a fuego suave durante 25-30 minutos.</p><p>Retira la fritada y escúrrela. Pasa el aceite a un recipiente y resérvalo. Limpia la sartén con papel absorbente de cocina.</p> <div id="amg_videointext" style="margin-bottom:18px"><script type="text/javascript">document.write('<scr' + 'ipt language="Javascript" type="text/javascript" src="http://des.smartclip.net/ads?t=de&p=9372&pl=f4cae7e9&sz=400x320&cat=intxt&rnd=' + Math.round(Math.random() * 1000000) + '"></scr' + 'ipt>');</script></div><p>Casca los <a href="http://www.hogarmania.com/cocina/recetas/huevos/" title="Recetas con huevos" target="_blank">huevos</a>, colócalos en un recipiente grande y bátelos. Sálalos a tu gusto, agrega la fritada de patatas, cebolla y pimiento y mezcla bien.</p><p>Coloca la sartén nuevamente en el fuego, agrega un chorrito del aceite reservado y agrega la mezcla. Remueve un poco con una cuchara de madera y espera (20 segundos) a que empiece a cuajarse. Separa los bordes, cubre la sartén con un plato de mayor diámetro que la sartén y dale la vuelta. Échala de nuevo para que cuaje por el otro lado.</p><p><strong>Consejo:</strong></p><p>Cuando pases el aceite de la fritada a un recipiente, introduce dentro un cubierto de metal para que absorba el calor y no se casque. </p><p>Puedes preparar 2 tortillas porque seguramente si sólo haces una, alcanzará demasiado peso, por lo que resultará un poco difícil darle la vuelta.</p><p>A la hora de decidir <strong>cuántos huevos</strong> vas a añadir a una receta, debes tener en cuenta el peso. Los hay de distintos tipos: XL (peso superior a 73 gramos), L (73-63 gramos), M (63-53 gramos) y S (menor de 53 gramos). En general, hablaremos de huevos tipo L.
+</p>
+</div>
+
+<div id="lateral">
+  <h3>Síguenos</h3>
+  <ul>
+    <li><a href="#">Twitter</a></li>
+    <li><a href="#">Youtube</a></li>
+    <li><a href="#">Facebook</a></li>
+  </ul>
+  <h3>Webs amigas</h3>
+  <ul>
+    <li><a href="#">El cocinillas</a></li>
+    <li><a href="#">Cocina para dummys</a></li>
+    <li><a href="#">Recetas en 4 min</a></li>
+  </ul>
+</div>
+
+<div id="pie">
+<ul>
+  <a href="accesibilidad.html">Accesibilidad</a>
+</ul>
+</div>
+</body>
+</html>
